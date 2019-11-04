@@ -21,21 +21,24 @@
     dependencies {
         ...
         ...
-        implementation 'com.github.vickykdv:CircleRectImageView:1.0'
+        implementation 'com.github.vickykdv:FloatingButtonDrag:1.0'
     }
     
     
-  Implementasi pada XML
+  Implementasi pada XML ( Letakan didalam parent view )
   
-     <com.vickykdv.circlerectimageview.CircleRectImage
-        android:id="@+id/circleRectImage5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="14dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/img"
-        app:border_color="@android:color/holo_orange_light"
-        app:border_width="10"
-        app:roundAll="500" />
+     <?xml version="1.0" encoding="utf-8"?>
+      <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <com.vickykdv.fabdragger.FabButtonDragger
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:src="@android:drawable/ic_input_add"
+              />
+
+      </RelativeLayout>
 
