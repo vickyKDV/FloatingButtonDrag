@@ -35,5 +35,5 @@ dependencies {
 
     apply plugin: 'com.github.dcendents.android-maven'
 
-    group='https://github.com/vickyKDV/FabDagger'
+    group='com.github.vickyKDV'
 }
